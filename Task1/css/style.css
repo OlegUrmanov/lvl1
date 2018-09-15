@@ -1,10 +1,10 @@
 @font-face {
-font-family: 'corbel';
-src: url('../fonts/corbel.ttf');
+  font-family: 'corbel';
+  src: url('../fonts/corbel.ttf');
 }
 
 @font-face {
-  font-family:'arial';
+  font-family: 'arial';
   src: url('../fonts/arial.ttf');
 }
 
@@ -175,7 +175,8 @@ main {
   height: 30px;
   margin-left: 10px;
   padding-left: 4px;
-  width: 400px;}
+  width: 400px;
+}
 
 .password-block__password_active:focus {
   border-bottom: 3px solid #2483c6;
