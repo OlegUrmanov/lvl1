@@ -1,17 +1,18 @@
-function checkEmail(str){
+function checkEmail(str) {
   var result = str.match(/^[0-9a-z-\.]+\@[0-9a-z-]{1,}\.[a-z]{2,}$/i);
-  if (!result){
+  if (!result) {
     alert('Введите валидный e-mail.');
     return false;
-  }return true;
+  }
+  return true;
 }
 
-function checkPassword(pass, confrim) {
+function checkPassword(pass, pass_again) {
   if (pass.length < 6) {
     alert('Длина пароля должна быть не менее 6-ти символов.');
     return false;
   }
-  if (pass != confrim) {
+  if (pass != pass_again) {
     alert('Введенные пароли не совпадают.');
     return false;
   }
@@ -30,9 +31,8 @@ function checkAgreementRules() {
 function registration() {
   var email = document.getElementsByClassName("registration__login")[0].value;
   var pass = document.getElementsByClassName("password-block__password")[0].value;
-  var confrim = document.getElementsByClassName("password-block__password-repeat")[0].value;
-  if (checkEmail(email) && checkPassword(pass, confrim)
-      && checkAgreementRules()) {
+  var pass_again = document.getElementsByClassName("password-block__password-repeat")[0].value;
+  if (checkEmail(email) && checkPassword(pass, pass_again) && checkAgreementRules()) {
     alert("Регистрация прошла успешно!");
   }
 }
