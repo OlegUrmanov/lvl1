@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'corbel';
-  src: url('../fonts/corbel.ttf');
+  font-family: corbel;
+  src: url(fonts/corbel.ttf);
 }
 
 @font-face {
-  font-family: 'arial';
-  src: url('../fonts/arial.ttf');
+  font-family: arial;
+  src: url(fonts/arial.ttf);
 }
 
 body {
@@ -183,7 +183,7 @@ main {
   outline: 0;
 }
 
-.footerr {
+.footer {
   background: #1e2125;
   bottom: 0;
   border-width: 1px;
