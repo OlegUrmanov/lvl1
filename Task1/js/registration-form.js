@@ -1,6 +1,6 @@
-function checkEmail(str){
+function checkEmail(str) {
   var result = str.match(/^[0-9-a-z-\.]+\@[0-9-a-z]{1,}\.[a-z]{2,}$/i);
-  if (!result){
+  if (!result) {
     alert('Введите валидный e-mail.');
     return false;
   }
@@ -12,7 +12,7 @@ function checkPassword(pass, confrim) {
     alert('Длина пароля должна быть не менее 6-ти символов.');
     return false;
   }
-  if (pass != confrim) {
+  if (pass !== confrim) {
     alert('Введенные пароли не совпадают.');
     return false;
   }
@@ -21,11 +21,10 @@ function checkPassword(pass, confrim) {
 
 function checkAgreementRules() {
   var result = document.getElementsByClassName('registration__check-confirmation')[0].checked;
-  if (!result) {
+  if (result) {
+    return true;
+  } else
     alert('Примите условия соглашения!');
-    return false;
-  }
-  return true;
 }
 
 function registration() {
@@ -39,6 +38,6 @@ function registration() {
   return false;
 }
 
-document.getElementsByClassName('registration')[0].onsubmit = function(){
+document.getElementsByClassName('registration')[0].onsubmit = function() {
   return registration();
 };
