@@ -12,7 +12,7 @@ function checkPassword(pass, confrim) {
     alert('Длина пароля должна быть не менее 6-ти символов.');
     return false;
   }
-  if (pass !== confrim) {
+  if (pass != confrim) {
     alert('Введенные пароли не совпадают.');
     return false;
   }
