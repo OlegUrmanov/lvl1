@@ -30,8 +30,8 @@ function unsubscribeGroup(group) {
     console.log("you are just unsubscribe for " + group);
   } else
   if (myGroups.indexOf(group) != -2 ){
-    var pos = 0, n = 2;
-    var All = myGroups.splice (pos, n);
+    var pos = 0, DeleteCount = 2;
+    myGroups.splice (pos, DeleteCount);
     console.log("you are just unsubscribe for All")
   } else
     console.log("can't unsubscribe on " + group);
