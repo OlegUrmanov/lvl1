@@ -23,8 +23,9 @@ function checkAgreementRules() {
   var result = document.getElementsByClassName('registration__check-confirmation')[0].checked;
   if (result) {
     return true;
-  } else
-    alert('Примите условия соглашения!');
+  }
+  alert('Примите условия соглашения!');
+  return false;
 }
 
 function registration() {
